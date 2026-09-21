@@ -1,0 +1,39 @@
+class addition
+{
+    int no1;
+    int no2;
+    // private data
+
+public:
+
+    void getdata(int a, int b); // member function
+
+    void putdata(void)
+    {
+        // inline function
+
+        cout << "no1 = " << no1 << "\n";
+        cout << "no2 = " << no2 << "\n";
+        cout << "addition = " << no1 + no2 << "\n";
+    }
+};
+
+void addition::getdata(int a, int b) // function defined outside class
+{
+    no1 = a;
+    no2 = b;
+}
+
+int main()
+{
+    addition a;
+    // declaration of class object
+
+    a.getdata(10, 20);
+    // member function called
+
+    a.putdata();
+    // member function called
+
+    return 0;
+}

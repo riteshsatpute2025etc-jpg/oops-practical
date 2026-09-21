@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+class complex
+{
+    int real;
+    int imag;
+    
+
+public:
+
+    void getdata(int a, int b);
+
+    void putdata(void)
+    {
+        
+
+        cout << "Real part = " << real << "\n";
+        cout << "Imaginary part = " << imag << "\n";
+        cout << "Complex number = " << real << " + " << imag << "i" << "\n";
+    }
+};
+
+void complex::getdata(int a, int b) 
+{
+    real = a;
+    imag = b;
+}
+
+int main()
+{
+    complex c;
+    
+
+    c.getdata(10, 20);
+    
+
+    c.putdata();
+    
+
+    return 0;
+}
